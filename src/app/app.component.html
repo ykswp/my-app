@@ -1,0 +1,77 @@
+
+ <a routerLink ="member"> Member</a>
+<br>
+<router-outlet></router-outlet> 
+<br>
+<br>
+
+<br>
+<!--
+<ul>
+<li *ngFor = "let i of arr">{{i}}</li>
+</ul>
+<p *ngIf = "myName != 'ygesh' && true">Yug</p>
+<p *ngIf = "istrue; then firstTemp else secondTemp">Hello </p>
+
+
+<ng-template #firstTemp>My First template</ng-template>
+<ng-template #secondTemp>My Second template</ng-template> -->
+
+<!-- <H2>Item List</H2>
+<input placeholder="Add Item" [(ngModel)] = "addItem">
+<button (click)="pushItems()">Add</button>
+
+<ul>
+<li *ngFor = "let i of arr; let ind = index">{{i}}
+      <span (click)="deletItem(ind)">x</span>
+</li>
+
+</ul>
+
+{{ sortArray | sort: 'ascending'}} 
+
+ <form class="container" [formGroup]  ="form" >
+
+        <input placeholder ="Decimal Value " formControlName = "decimal" (ngModelChange) = "decimalChanged(oldvalue, newvalue = $event)" >
+        <br>
+        <input placeholder ="Binary Value " formControlName = "binary" (ngModelChange) = "binaryChanged(oldvalue, newvalue = $event)" >
+        <br>
+        <input placeholder ="Octal Value" formControlName = "octal" (ngModelChange) = "octalChanged(oldvalue, newvalue = $event)" >
+        <br>
+        <input placeholder ="Hexa Value" formControlName = "hexa" (ngModelChange) = "hexaChanged(oldvalue, newvalue = $event)" >
+        <br>
+<br>
+        <input type="submit" value="submit">
+</form> 
+
+<form class="container" [formGroup]  ="form"  (ngSubmit)="onSubmit(form.value)">
+
+        <input placeholder ="First name" formControlName = "firstname" >
+        <br>
+        <input placeholder ="last name" formControlName = "lastname" >
+        <br>
+        <select formControlName = "city">
+
+            <option>ASD</option>
+            <option>BSD</option>
+            <option>CSD</option>
+            <option>DSD</option>
+
+        </select>
+<br>
+        <input type="submit" [disabled]="!form.value" value="submit">
+</form> 
+
+
+
+-->
+{{errorData}}
+<ul>
+        <li *ngFor = "let cell of getData">
+                        {{cell.email}}
+
+
+        </li>
+
+     
+</ul>

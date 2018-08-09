@@ -1,0 +1,15 @@
+<p>
+  members works!
+</p>
+<button (click)="showContact()">Contact</button>
+<button (click)="showTeam()">Team</button>
+<router-outlet></router-outlet>
+<br>
+<input type="text" (keyup)="onNamekeyUp($event)">
+<button (click)="getProfileData()">click</button>
+<br>
+<div *ngIf="found">
+    <span>Author Name is ' {{name}}</span><br>
+<span>Author Mail is ' {{email}}</span>
+</div>
+<button (click)="postProfileData()">click</button>
